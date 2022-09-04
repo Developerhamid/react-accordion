@@ -1,0 +1,89 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: linear-gradient(272deg, #6cd2f9a3, #00000017);
+}
+
+.container {
+  width: 30%;
+  max-width: 45%;
+  margin: 4rem auto;
+  /* border: 2px solid red; */
+  padding: 1em 10px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 9px -2px rgb(0 0 0 / 58%);
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.accordian-box {
+  margin: 0.5em 0 5px 0;
+  /* border: 2px solid red; */
+  padding: 5px 0;
+}
+
+.question-box {
+  background: #d7f9b573;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  padding: 0 10px;
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.question-box span:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdfffc;
+  width: 25px;
+  height: 25px;
+  font-weight: bolder;
+  border-radius: 50%;
+  box-shadow: 0 0 8px -3px black;
+  font-size: 1.2em;
+}
+
+.question-box span:nth-child(1):hover {
+  cursor: pointer;
+}
+
+.question-box span:nth-child(2) {
+  /* border: 2px solid red; */
+  font-size: 1.1em;
+  margin: 0 8px;
+}
+
+.accordian-box p {
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: #ffc0cb8f;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    min-width: 230px;
+  }
+}
